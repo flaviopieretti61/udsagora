@@ -1,0 +1,28 @@
+{
+  "name": "udsagora",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Gestione iscrizioni soci e corsi - UdsAgora",
+  "scripts": {
+    "prebuild": "pnpm --filter @udsagora/api exec prisma generate",
+    "dev": "pnpm -r --parallel dev",
+    "build": "pnpm --filter @udsagora/api build && pnpm --filter @udsagora/web build",
+    "start": "pnpm --filter @udsagora/api start",
+    "db:generate": "pnpm --filter @udsagora/api db:generate",
+    "db:migrate": "pnpm --filter @udsagora/api db:migrate",
+    "db:migrate:deploy": "pnpm --filter @udsagora/api db:migrate:deploy",
+    "db:seed": "pnpm --filter @udsagora/api db:seed",
+    "db:studio": "pnpm --filter @udsagora/api db:studio"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.2"
+  },
+  "packageManager": "pnpm@9.12.0",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "recharts": "^3.8.1"
+  }
+}

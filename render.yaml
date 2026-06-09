@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: udsagora
+    env: node
+    plan: free
+    buildCommand: pnpm install && pnpm db:generate && pnpm build
+    startCommand: npm --prefix apps/api start
+    envVars:
+      - key: NODE_ENV
+        value: production
