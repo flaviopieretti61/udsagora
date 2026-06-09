@@ -12,7 +12,7 @@ UdsAgora è una **piattaforma web moderna** progettata per semplificare la gesti
 
 **Gestione Soci**
 - Anagrafica completa con dati personali, contatti e documenti
-- Categorizzazione (Ordinario, BCC, Coniuge, Giovani, ecc.)
+- Categorizzazione (Ordinario, Coniuge, Giovani, Convenzione, ecc.)
 - Storico iscrizioni e rinnovi
 
 **Gestione Iscrizioni**
@@ -33,7 +33,7 @@ UdsAgora è una **piattaforma web moderna** progettata per semplificare la gesti
 **Sicurezza e Compliance**
 - Autenticazione con ruoli (ADMIN, SEGRETERIA, CONSIGLIO)
 - Form privacy integrata con firma digitale
-- GDPR compliant (PostgreSQL in UE - Supabase Ireland)
+- GDPR compliant (Supabase Central EU)
 
 ---
 
@@ -58,7 +58,7 @@ git push  # → Render builda e deploya in ~1 minuto
 
 **Infrastruttura:**
 - Render (PaaS gratuito)
-- Supabase PostgreSQL (500 MB free tier, Ireland)
+- Supabase PostgreSQL (500 MB free tier, Central EU (Frankfurt))
 - **Costo:** €0 (scalabile a ~€32/mese con SLA garantito)
 
 ---
@@ -80,11 +80,10 @@ Backend: http://localhost:4000
 ## 📄 Info
 
 **Proprietà:    Pejo61** 
+
 **Developed by: Pejo61**
 
 Versione 1.0.0 — Maggio 2026
-
-
 
 
 
