@@ -28,6 +28,8 @@ UdsAgora è una **piattaforma web moderna** progettata per semplificare la gesti
 **Report Avanzati**
 - Riepilogo incassi per categoria, corso e metodo di pagamento
 - Dettaglio iscrizioni con export PDF/Excel
+- Chiusura di Cassa con conteggio contanti
+- Registrazione piccole spese e rettifiche
 - Audit log completo di tutte le operazioni
 
 **Sicurezza e Compliance**
@@ -63,19 +65,6 @@ git push  # → Render builda e deploya in ~1 minuto
 
 ---
 
-## 🔧 Setup Locale
-
-```bash
-git clone https://github.com/flaviopieretti61/udsagora.git
-cd udsagora
-pnpm install
-pnpm dev
-```
-
-Frontend: http://localhost:5173  
-Backend: http://localhost:4000
-
----
 
 ## 📄 Info
 
@@ -91,12 +80,16 @@ Versione 1.0.0 — Maggio 2026
 
 **KeepAlive:** 
 - Per tenere in vita il  servizio SUPABASE:
-- su Github è stato creato una Action che fa una richiesta a un API di supabase, schedulata  ogni lunedì e giovedì alle 12:00 UTC 
-- sono state create due variabili Secret sul Setting del repository udsagora
-- è stato creato questo processo
-.github/workflows/supabase_keep_alive.yml
+
+su Github è stato creato una Action che fa una richiesta a un API di supabase, schedulata  ogni lunedì e giovedì alle 12:00 UTC 
+
+sono state create due variabili Secret sul Setting del repository udsagora
+
+è stato creato il processo .github/workflows/supabase_keep_alive.yml
 
 - Per tenere in vita il  servizio RENDER:
-- é stato creato un servizio monitoraggio HTTPS per https://udsagora.onrender.com/login
+é stato creato un servizio monitoraggio HTTPS per https://udsagora.onrender.com/login
+
 Resquest su:    https://dashboard.uptimerobot.com/monitors
+
 schedulato:     ogni 10 minuti
